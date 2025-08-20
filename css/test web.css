@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #f44336;
+  color: rgb(0, 0, 0);
+  padding: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px 10px;
+   display: inline-block;   /* ทำให้ transform ทำงาน */
+  transition: transform 0.3s ease
+}
+
+.navbar a:hover {
+  background-color: #bcc949;           /* เปลี่ยนสีพื้นหลังเวลาชี้ */
+  color: #fff;                      /* เปลี่ยนสีตัวหนังสือเวลาชี้ */ 
+  transform: translateY(-3px) scale(1.05);  /* ขยับขึ้นเล็กน้อย และขยาย */
+  cursor: pointer;                 
+}
+
+.navbar input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.navbar button {
+  background-color: #ff33cc;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #ffeb3b;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+  transform: translateY(-3px) scale(1.05);
+  color: #fff;
+}
+
+.sidebar a.active {
+  background-color: #444;
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #ff33cc;
+  text-align: center;
+  padding: 40px;
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th, .table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button.register-btn {
+  background-color: #00ff00; /* เขียว */
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+}
+
+form button.cancel-btn {
+  background-color: #ff4c4c; /* แดง */
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
